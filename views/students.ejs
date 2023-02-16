@@ -1,0 +1,35 @@
+<table class="table table-striped">
+  
+    <thead>
+        <tr>
+        <th>Profile Picture</th>
+        <th>Student Number</th>
+        <th>Fist Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Grade Number</th>
+        <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% Learn.forEach(function(item) { %>
+        <tr>
+          <td> <img class="ProfileP" src="<%= item.Teacher_Profile_Picture %>" alt=""></td>
+          <td><%= students.Student_Number %></td>
+          <td><%= students.Fist_Name %></td>
+          <td><%= students.Last_Name %></td>
+          <td><%= students.address %></td>
+          <td><%= students.Gender %></td>
+          
+          <td><%= item.grade_number %></td>
+          <td>
+            <form action="/delete" method="post"> <input type="checkbox" name="checkbox" value= "<%=item._id%>" onChange = "this.form.submit()"> Delete Learner </form>
+            <!-- <form action="/delete" method="post"><i class="fas fa-edit edit-icon"></i></form>
+            <form action="/delete" method="post"><i class="fas fa-trash-alt edit-icon2"></i></form> -->
+            
+          </td>
+        </tr>
+        <% }); %>
+        </tbody>
+    </table>

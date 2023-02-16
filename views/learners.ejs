@@ -1,0 +1,334 @@
+<%- include("header") -%>
+<head>
+  <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#712cf9">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/style.css">
+ 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+</head>
+<!-- <div class="box" id="heading"><h1> <%= listTitle %> </h1></div> -->
+
+<section aria-colspan="main">
+
+
+  <!doctype html>
+  <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.104.2">
+      <title>SYGE</title>
+  
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+      <link rel="stylesheet" href="style.css">
+  
+      <link rel="stylesheet" href="public/css/style.css">
+      
+  
+      
+  
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+      <!-- Favicons -->
+ 
+  
+      
+      <!-- Custom styles for this template -->
+      <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+      
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Welcome to SYGE</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="navbar-nav">
+      <div class="nav-item text-nowrap">
+          
+        <a class="nav-link px-3" href="main.html">Sign out</a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3 sidebar-sticky sideM">
+          <ul class="nav flex-column">
+            <li class="nav-item ">
+              <a class="nav-link" aria-current="page" href="/">
+                <span data-feather="home" class="align-text-bottom"></span>
+                Dashboard
+              </a>
+            </li>
+           
+            <li class="nav-item">
+
+              <a class="nav-link active" href="Mylearners.html">
+                <span data-feather="file" class="align-text-bottom"></span>
+                My Learners
+              
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="subjects.html">
+                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+               Subjects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="content.html">
+                <span data-feather="users" class="align-text-bottom"></span>
+               Content
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Announce.html">
+                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+                Announcemets
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="layers" class="align-text-bottom"></span>
+                Library
+              </a>
+            </li>
+            
+          </ul>
+  
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
+            <span>Administration</span>
+            <a class="link-secondary" href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle" class="align-text-bottom"></span>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text" class="align-text-bottom"></span>
+                Set Exam
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text" class="align-text-bottom"></span>
+                Upload Library Content
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text" class="align-text-bottom"></span>
+                Upload Term Content
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text" class="align-text-bottom"></span>
+               Create Announcement
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+         
+            </button>
+          <div class="btn-toolbar mb-2 mb-md-0">
+              
+            <div class="btn-group me-2">
+      
+                 
+              <button type="button" class="btn btn-sm btn-outline-secondary Size_btn">Share</button>
+              
+              <button type="button" class="btn btn-sm btn-outline-secondary Size_btn">Export</button>
+            </div>
+            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle Size_btn">
+              <span data-feather="calendar" class="align-text-bottom"></span>
+              This week
+            </button>
+          </div>
+        </div>
+  
+        <section class="seacthh">
+
+            <div class="container1">
+                <div class="row">
+                    <div class="col searchop">
+                    <input class="form-control mr-sm-2"  id="searchInput" type="search" onkeyup="searchTable()" placeholder="Search" aria-label="Search">        
+                  </div>
+                  <div class="col-lg-2 col-sm-2 searchclick">
+                    <button class="btn btn-outline-success my-2 my-sm-0 Size_btn1"  onclick="searchTable()">Search</button>
+                  </div>
+                
+                </div>
+              </div>
+              <script src="search.js"></script>
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="boxes"><div class="row">
+      
+          <table class="table table-striped">
+            <thead>
+            <tr>
+            <th>Profile Picture</th>
+            <th>Student Number</th>
+            <th>Fist Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Grade Number</th>
+            <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% Learn.forEach(function(item) { %>
+            <tr>
+              <td> <img class="ProfileP" src="<%= item.Leaner_Profile_Picture %>" alt=""></td>
+              <td><%= item.Student_Number %></td>
+              <td><%= item.Fist_Name %></td>
+              <td><%= item.Last_Name %></td>
+              <td><%= item.address %></td>
+              <td><%= item.Gender %></td>
+              
+              <td><%= item.grade_number %></td>
+              <td>
+                <form action="/delete" method="post"> <input type="checkbox" name="checkbox" value= "<%=item._id%>" onChange = "this.form.submit()"> Delete Learner </form>
+                <!-- <form action="/delete" method="post"><i class="fas fa-edit edit-icon"></i></form>
+                <form action="/delete" method="post"><i class="fas fa-trash-alt edit-icon2"></i></form> -->
+                
+              </td>
+            </tr>
+            <% }); %>
+            </tbody>
+            
+            </table>
+            
+
+
+
+
+
+
+
+
+
+          
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+            <button class="close">&times;</button>
+            <p>Please enter a value for the new item.</p>
+            </div>
+            </div>
+            
+            <form class="item" action="/" method="post" onsubmit="return validateForm()">
+            <div class="row">
+            <div class="col-sm-12"> <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="newItem" rows="3"></textarea>
+            </div>
+            </div>
+            <div class="col-sm-12"> <button class="Size_btn" type="submit" name="list"> Submit</button>
+            </div>
+            </div>
+            
+            
+            
+            </form>
+            
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the close button
+            var closeBtn = document.getElementsByClassName("close")[0];
+            
+            // Get the form
+            var form = document.getElementsByClassName("item")[0];
+            
+            // When the form is submitted, validate the input
+            form.onsubmit = function() {
+            var newItemInput = document.getElementsByName("newItem")[0];
+            if (newItemInput.value === "") {
+            // If the input is empty, display the modal
+            modal.style.display = "block";
+            return false;
+            }
+            return true;
+            }
+            
+            // When the user clicks on the close button, close the modal
+            closeBtn.onclick = function() {
+            modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            }
+            }
+            </script>
+        
+
+
+          
+
+     
+
+
+
+ 
+
+
+   
+  
+         
+        
+      
+      
+
+
+<!-- Main content -->
+
+
+
+
+  
+
+ <!-- this below is for connectinf the pages -->
+ 
+
+
+
+</html>

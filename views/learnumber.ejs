@@ -1,0 +1,142 @@
+<section class="seacthh">
+
+  <div class="container1">
+      <div class="row">
+          <div class="col searchop">
+          <input class="form-control mr-sm-2"  id="searchInput" type="search" onkeyup="searchTable()" placeholder="Search" aria-label="Search">        
+        </div>
+        <div class="col-lg-2 col-sm-2 searchclick">
+          <button class="btn btn-outline-success my-2 my-sm-0 Size_btn1"  onclick="searchTable()">Search</button>
+        </div>
+      
+      </div>
+    </div>
+    <script src="search.js"></script>
+</section>
+
+
+
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Profile Picture</th>
+<th>Student Number</th>
+<th>Fist Name</th>
+<th>Last Name</th>
+<th>Address</th>
+<th>Gender</th>
+<th>Grade Number</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<% Learn.forEach(function(item) { %>
+<tr>
+  <td> <img class="ProfileP" src="<%= item.Leaner_Profile_Picture %>" alt=""></td>
+  <td><%= item.Student_Number %></td>
+  <td><%= item.Fist_Name %></td>
+  <td><%= item.Last_Name %></td>
+  <td><%= item.address %></td>
+  <td><%= item.Gender %></td>
+  
+  <td><%= item.grade_number %></td>
+  <td>
+    <i class="fas fa-edit edit-icon"></i>
+    <i class="fas fa-trash-alt edit-icon2"></i>
+  </td>
+</tr>
+<% }); %>
+</tbody>
+
+</table>
+
+
+
+
+<section class="boxes"><div class="row">
+<div class="col-sm-3">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">My learners</h5>
+<tr>
+  <h1><%= Learn.length %></h1>
+</tr>
+<a href="#" class="btn btn-primary">iew Learners</a>
+</div>
+</div>
+</div>    
+
+<div class="col-sm-3">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">My learners</h5>
+<tr>
+  <h1><%= Learn.length %></h1>
+</tr>
+<a href="#" class="btn btn-primary">iew Learners</a>
+</div>
+</div>
+</div>  
+</div></section>
+
+
+
+
+
+<div id="myModal" class="modal">
+<div class="modal-content">
+<button class="close">&times;</button>
+<p>Please enter a value for the new item.</p>
+</div>
+</div>
+
+<form class="item" action="/" method="post" onsubmit="return validateForm()">
+<div class="row">
+<div class="col-sm-12"> <div class="form-group">
+<label for="exampleFormControlTextarea1">Example textarea</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" name="newItem" rows="3"></textarea>
+</div>
+</div>
+<div class="col-sm-12"> <button class="Size_btn" type="submit" name="list"> Submit</button>
+</div>
+</div>
+
+
+
+</form>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the close button
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Get the form
+var form = document.getElementsByClassName("item")[0];
+
+// When the form is submitted, validate the input
+form.onsubmit = function() {
+var newItemInput = document.getElementsByName("newItem")[0];
+if (newItemInput.value === "") {
+// If the input is empty, display the modal
+modal.style.display = "block";
+return false;
+}
+return true;
+}
+
+// When the user clicks on the close button, close the modal
+closeBtn.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
